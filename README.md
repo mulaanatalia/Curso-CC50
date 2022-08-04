@@ -1,5 +1,6 @@
 # Curso-CC50
 Este repositório contém as aulas e alguns exercícios (apenas a parte de programação) do curso CC50 de Harvard (que em Brasil chama-se CS50). Linguagens/Tecnologias utilizadas: C, Python, JavaScript, SQL,HTML, CSS.
+LINK DA IDE UTILIZADA: ide.cs50.io
 Conteúdo do curso:
 Módulo 0: Scratch;
 Módulo 1: C;
