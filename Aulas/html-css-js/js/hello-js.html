@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+
+            function greet()
+            {
+                //document: variavel global do js e querySelector é uma função usada para seleccionar
+                //um nó no DOM (Document Object Model)
+                let name = document.querySelector('#name').value;
+                alert('hello, ' + name);
+            }
+
+            //função que passa a funçao greet por nome e nao é chamada ainda, primeiro deve-se ouvir 
+            //o evento DOMContentLoaded
+            function listen(){
+                document.querySelector('form').addEventListener('submit', greet);
+            }
+
+            document.addEventListener('DOMContentLoaded', listen);
+
+        </script>
+
+        <title>hello</title>
+    </head>
+    <body>
+        <!--onsubmit é um atributo-->
+        <!--Preenchimento automático desactivado-->
+        <form onsubmit="greet(); return false;"> <!-- return false para que o formulario nao seja enviado em qualquer lugar. -->
+            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+            <input type="submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+    <head>
+        <title>geolocalizacao</title>
+    </head>
+    <body>
+        <script>
+            //pedimos ao navegador as coordenadas GPS de um usuário 
+            navigator.geolocation.getCurrentPosition(function(position) {
+            document.write(position.coords.latitude + ", " + position.coords.longitude);
+            });
+ 
+        </script>
+    </body>
+</html>
